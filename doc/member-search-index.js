@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"menu","c":"Menu","l":"Menu()","u":"%3Cinit%3E()"},{"p":"menu","c":"Menu","l":"menuCrearRecurso()"},{"p":"menu","c":"Menu","l":"menuInicial(Usuario)","u":"menuInicial(model.Usuario)"},{"p":"menu","c":"Menu","l":"menuMostrarRecurso()"},{"p":"menu","c":"Menu","l":"menuMostrarTipo()"},{"p":"menu","c":"Menu","l":"menuUsuario()"}];updateSearchResults();
