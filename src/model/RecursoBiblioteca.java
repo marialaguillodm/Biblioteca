@@ -17,7 +17,7 @@ public abstract class RecursoBiblioteca {
 	private int id;
 	/** Título del recurso. */
 	private String titulo;
-	/** Año de publicación o lanzamiento del recurso. */
+	/** Año de publicación o lanzamiento del recurso. Pongo year y no año para evitar problemas con la ñ */
 	private int year;
 	/** Estado actual del recurso (por ejemplo: DISPONIBLE, RETIRADO, RESERVADO). */
 	private EstadoRecurso estado;
@@ -48,7 +48,6 @@ public abstract class RecursoBiblioteca {
 		
 	/**
      * Genera un ID único para el recurso incrementando el contador estático.
-     *
      * @return Un nuevo ID único.
      */
 	private int generarId () {
@@ -57,7 +56,6 @@ public abstract class RecursoBiblioteca {
 	
 	/**
      * Obtiene el ID del recurso.
-     *
      * @return El ID del recurso.
      */
 	public int getId() {
@@ -67,7 +65,6 @@ public abstract class RecursoBiblioteca {
 	/**
      * Establece el ID del recurso.
      * Este método debería usarse con precaución ya que los IDs son generados automáticamente.
-     *
      * @param id Nuevo ID del recurso.
      */
 	public void setId(int id) {
@@ -76,7 +73,6 @@ public abstract class RecursoBiblioteca {
 
 	 /**
      * Obtiene el título del recurso.
-     *
      * @return El título del recurso.
      */
 	public String getTitulo() {
@@ -85,7 +81,6 @@ public abstract class RecursoBiblioteca {
 
 	 /**
      * Establece el título del recurso.
-     *
      * @param titulo Nuevo título.
      */
 	public void setTitulo(String titulo) {
@@ -94,7 +89,6 @@ public abstract class RecursoBiblioteca {
 
 	/**
      * Obtiene el año del recurso.
-     *
      * @return Año del recurso.
      */
 	public int getYear() {
@@ -103,7 +97,6 @@ public abstract class RecursoBiblioteca {
 
 	 /**
      * Establece el año del recurso.
-     *
      * @param year Nuevo año.
      */
 	public void setYear(int year) {
@@ -112,7 +105,6 @@ public abstract class RecursoBiblioteca {
 
 	 /**
      * Obtiene el estado actual del recurso.
-     *
      * @return Estado del recurso.
      */
 	public EstadoRecurso getEstado() {
@@ -121,7 +113,6 @@ public abstract class RecursoBiblioteca {
 
 	 /**
      * Establece el estado del recurso.
-     *
      * @param estado Nuevo estado (DISPONIBLE, RESERVADO, etc.).
      */
 	public void setEstado(EstadoRecurso estado) {
@@ -130,7 +121,6 @@ public abstract class RecursoBiblioteca {
 
 	 /**
      * Obtiene la categoría del recurso.
-     *
      * @return Categoría del recurso.
      */
 	public Categorias getCategoria() {
@@ -139,7 +129,6 @@ public abstract class RecursoBiblioteca {
 
 	/**
      * Establece la categoría del recurso.
-     *
      * @param categoria Nueva categoría.
      */
 	public void setCategoria(Categorias categoria) {
