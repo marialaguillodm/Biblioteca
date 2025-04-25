@@ -2,8 +2,6 @@ package model;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import menu.Menu;
 import ok.Ok;
 
 public class Usuarios {
